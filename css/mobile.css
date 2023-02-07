@@ -15,6 +15,19 @@ html {
     font-family: 'League Spartan', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+    margin: 0.2rem 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: var(--gray);
+}
+
 .header__nvbr {
     aspect-ratio: 1;
     position: relative;
@@ -36,10 +49,8 @@ html {
     height: 8rem;
 }
 
-.nvbr__icons > h1 {
+.nvbr__icons > img + img {
     margin-inline: auto;
-    color: white;
-    font-size: 2.6rem;
 }
 
 .nvbr__move {
@@ -57,4 +68,37 @@ html {
     height: 100%;
     padding: 1.2rem;
     object-fit: contain;
+}
+
+.main__artcl {
+    padding: 6rem 0 7rem;
+    line-height: 1.4;
+    font-size: 1.6rem;
+}
+
+.main__artcl.artcl__last {
+    padding: 4rem 0;
+}
+
+.main__artcl.artcl__last h2 {
+    letter-spacing: 0.4rem;
+}
+
+.main__artcl h1.artcl__ttl {
+    font-size: 3.6rem;
+}
+
+.artcl__cntnt {
+    margin: 1.6rem 0 3.4rem;
+    color: var(--grayish);
+}
+
+.main__img {
+    width: 100%;
+}
+
+.artcl__link {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
 }
