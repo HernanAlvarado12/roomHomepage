@@ -12,6 +12,7 @@
 
 html {
     font-size: 62.5%;
+    user-select: none;
     font-family: 'League Spartan', sans-serif;
 }
 
@@ -33,8 +34,20 @@ body::-webkit-scrollbar-thumb {
     max-height: 60rem;
     aspect-ratio: 1;
     position: relative;
-    background: url('../assets/mobile-1.jpg') no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.header__nvbr.first {
+    background-image: url('../assets/mobile-1.jpg');
+}
+
+.header__nvbr.second {
+    background-image: url('../assets/mobile-2.jpg');
+}
+
+.header__nvbr.third {
+    background-image: url('../assets/mobile-3.jpg');
 }
 
 .elmnt--auto, .cntnr--auto {
@@ -138,6 +151,17 @@ body::-webkit-scrollbar-thumb {
 
 @media (any-hover : hover) {
     :is(#iconMenu, #iconClose):hover {
+        cursor: pointer;
+    }
+
+    .nvbr__move figure:hover {
+        cursor: pointer;
+        filter: grayscale(100%);
+        background-color: red;
+    }
+
+    .artcl__link:hover {
+        color: var(--grayish);
         cursor: pointer;
     }
 }
