@@ -19,7 +19,6 @@
         <link rel ="stylesheet" href ="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap">
         <link rel ="shortcut icon" href ="./assets/favicon.png" type ="image/x-icon">
         <link rel ="stylesheet" href ="./css/mobile.css">
-        <link rel ="stylesheet" media ="screen and (min-width: 624px)" href ="./css/table.css">
         <link rel ="stylesheet" media ="screen and (min-width: 900px)" href ="./css/desktop.css">
     </head>
 
@@ -28,8 +27,17 @@
         <header>
             <nav class ="header__nvbr">
                 <figure class ="nvbr__icons cntnr--auto cntnr--flx">
-                    <img src ="./assets/hamburger.svg" alt ="icon menu">
+                    <img  id ="iconMenu" src ="./assets/hamburger.svg" alt ="icon menu">
                     <img src ="./assets/logo.svg" alt ="logo of platform">
+                    <aside class ="nvbr__menu cntnr--flx">
+                        <ul class ="elmnt--auto elmnt--flx">
+                            <img id ="iconClose" src ="./assets/close.svg" alt ="icon close">
+                            <li><a href ="#">home</a></li>
+                            <li><a href ="#">shop</a></li>
+                            <li><a href ="#">about</a></li>
+                            <li><a href ="#">contact</a></li>
+                        </ul>
+                    </aside>
                 </figure>
                 <figure class ="nvbr__move cntnr--flx">
                     <img src ="./assets/angle-left.svg" alt ="arrow left">
@@ -60,7 +68,7 @@
             </article>
             <img class ="main__img" src ="./assets/light.jpg" alt ="image">
         </main>
-
+        <script src ="./model.js"></script>
     </body>
 
 </html>
