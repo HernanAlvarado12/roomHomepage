@@ -1,3 +1,82 @@
-@media (min-width: 900px) {
-    
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #iconMenu, #iconClose {
+        display: none;
+    }
+
+    header {
+        width: 65%;
+    }
+
+    .header__nvbr {
+        background-image: url('../assets/desktop-1.jpg');
+    }
+
+    .nvbr__move {
+        width: 12rem;
+        height: 5rem;
+    }
+
+    .nvbr__menu {
+        display: flex;
+        position: relative;
+        background: transparent;
+    }
+
+    .nvbr__menu > ul {
+        margin-left: 6rem;
+        column-gap: 5rem;
+        justify-content: flex-start;
+    }
+
+    .nvbr__menu > ul > li > a {
+        color: white;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .main__artcl:not(.artcl__last) {
+        width: 25%;
+        padding: 3rem 0;
+    }
+}
+
+@media (any-hover : hover) {
+    .nvbr__menu > ul > li > a {
+        position: relative;
+    }
+
+    .nvbr__menu > ul > li > a::after {
+        content: '';
+        width: 80%;
+        height: 0.2rem;
+        position: absolute;
+        bottom: -0.5rem;
+        right: 10%;
+        scale: 0 1;
+        transition: scale 400ms;
+        background-color: white;
+    }
+
+    .nvbr__menu > ul > li > a:hover::after {
+        scale: 1;
+        transition: scale 500ms;
+    }
+
+    .nvbr__move figure:hover {
+        cursor: pointer;
+        filter: grayscale(100%);
+        background-color: red;
+    }
 }
