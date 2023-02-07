@@ -13,6 +13,8 @@
     }
 
     .header__nvbr {
+        height: 65vh;
+        max-height: max-content;
         background-image: url('../assets/desktop-1.jpg');
     }
 
@@ -48,7 +50,17 @@
 
     .main__artcl:not(.artcl__last) {
         width: 25%;
-        padding: 3rem 0;
+        padding: 2.8rem 0;
+    }
+
+    header ~ .main__img {
+        width: 30%;
+        height: 35vh;
+    }
+
+    .main__artcl.artcl__last {
+        width: 40%;
+        padding: 2rem 1.2rem 0 1.2rem;
     }
 }
 
@@ -78,5 +90,10 @@
         cursor: pointer;
         filter: grayscale(100%);
         background-color: red;
+    }
+
+    .artcl__link:hover {
+        color: var(--grayish);
+        cursor: pointer;
     }
 }
