@@ -85,15 +85,4 @@
         scale: 1;
         transition: scale 500ms;
     }
-
-    .nvbr__move figure:hover {
-        cursor: pointer;
-        filter: grayscale(100%);
-        background-color: red;
-    }
-
-    .artcl__link:hover {
-        color: var(--grayish);
-        cursor: pointer;
-    }
 }
