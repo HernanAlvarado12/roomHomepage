@@ -1,0 +1,60 @@
+:root {
+    --black: hsl(0, 0%, 0%);
+    --gray: hsl(0, 0%, 27%);
+    --grayish: hsl(0, 0%, 63%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header__nvbr {
+    aspect-ratio: 1;
+    position: relative;
+    background: url('../assets/mobile-1.jpg')  no-repeat;
+    background-size: 100% 100%;
+}
+
+.elmnt--auto, .cntnr--auto {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.elmnt--flx, .cntnr--flx {
+    display: flex;
+    align-items: center;
+}
+
+.nvbr__icons {
+    height: 8rem;
+}
+
+.nvbr__icons > h1 {
+    margin-inline: auto;
+    color: white;
+    font-size: 2.6rem;
+}
+
+.nvbr__move {
+    width: 8rem;
+    height: 4rem;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;   
+}
+
+.nvbr__move > img {
+    flex: 1;
+    height: 100%;
+    padding: 1.2rem;
+    object-fit: contain;
+}
